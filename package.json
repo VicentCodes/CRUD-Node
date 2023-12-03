@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0",
+    "net": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "name": "nuevo",
+  "description": "��#\u0000 \u0000n\u0000u\u0000e\u0000v\u0000o\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VicentCode/ProgramacionAMB"
+  },
+  "engines": {
+    "node": ">=14.20.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://https://github.com/VicentCode/ProgramacionAMB/issues"
+  },
+  "homepage": "https://github.com/VicentCode/ProgramacionAMB"
+}

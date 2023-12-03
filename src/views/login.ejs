@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+
+
+  <link rel="stylesheet" href="./css/styleLogin.css">
+
+</head>
+
+<body>
+  <div id="errorModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h4>Error de inicio de sesión</h4>
+      <p>Nombre de usuario o contraseña incorrecta.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>
+
+  <div id="error-message" style="display: none;">
+    <p class=".eerror-message"></p>
+  </div>
+
+
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Iniciar sesión</header>
+
+      <% if (typeof error !=='undefined' && error !==null) { %>
+        <div class="error-container" id="errorContainer">
+          <div class="close-icon" onclick="closeError()">×</div>
+          <p class="errorMessage" id="errorMessage">
+            <%= error %>
+          </p>
+        </div>
+        <% } %>
+      <form action="/vice" method="post">
+
+       
+
+            <input type="text" id="username" name="username" class="form-control" placeholder="Nombre de usuario"
+              aria-label="Nombre de usuario" aria-describedby="button-addon2">
+            <input type="password" id="userpassword" name="userpassword" class="form-control" placeholder="Contraseña"
+              aria-label="Contraseña" aria-describedby="button-addon2">
+            <input type="submit" class="button" value="Iniciar sesión">
+
+      </form>
+      <div class="signup">
+        <span class="signup">No tienes una cuenta?
+          <label for="check">Registrarse</label>
+        </span>
+      </div>
+    </div>
+    <div class="registration form">
+      <header>Registro</header>
+      <form action="/register" method="post">
+        <input type="text" id="username" name="username" placeholder="Nombre de usuario" pattern="[a-zA-Z0-9]+"
+          required>
+        <input type="email" id="email" name="email" placeholder="Correo" required>
+        <input type="password" id="pass" name="pass" placeholder="Contraseña" required>
+        <input type="submit" class="button" value="Registrar cuenta">
+      </form>
+      <div class="signup">
+        <span class="signup">Ya tienes una cuenta?
+          <label for="check">Iniciar sesión</label>
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/js/script.js"></script>
+
+</body>
+
+
+</html>

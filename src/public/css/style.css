@@ -1,0 +1,28 @@
+.separator {
+  margin-bottom: 10px;
+}
+
+.separatorTitle {
+  font-size: 30px;
+}
+
+.buttonAdd {
+  width: -webkit-fill-available;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.buttonsOptions {
+  width: -webkit-fill-available;
+  margin-bottom: 5px;
+}
+
+.marginLow {
+  margin-bottom: 20px;
+}
+
+.logoutb {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
