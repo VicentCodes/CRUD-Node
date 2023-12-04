@@ -1,4 +1,4 @@
-# Point of Sale System - Node.js, Express, EJS, MongoDB
+# Basic Sale System - Node.js, Express, EJS, MongoDB
 
 This project is a basic CRUD (Create, Read, Update, Delete) application simulating a point of sale system for a store. It includes a simple user authentication system with login and registration features.
 
