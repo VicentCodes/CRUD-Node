@@ -89,21 +89,21 @@ router.post("/register", async (req, res) => {
 });
 
 // Route to add a new product
-router.post('/add', async (req, res) => {
+router.post('/add',createSessionCheck, async (req, res) => {
   const valor = new Producto(req.body);
   await valor.save();
   res.redirect('/');
 });
 
 // Route to delete a product
-router.get('/del/:id', async (req, res) => {
+router.get('/del/:id',createSessionCheck, async (req, res) => {
   const { id } = req.params;
   await Producto.findByIdAndRemove({ _id: id });
   res.redirect('/');
 });
 
 // Route to update a product
-router.post('/update/:id', async (req, res) => {
+router.post('/update/:id',createSessionCheck, async (req, res) => {
   try {
     const { id } = req.params;
     const { producto, precio, iva } = req.body;
