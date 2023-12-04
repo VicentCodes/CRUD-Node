@@ -77,7 +77,7 @@ router.post("/vice", async (req, res) => {
 router.get('/', createSessionCheck, async (req, res) => {
   const datos = await Producto.find();
   res.render('index.ejs', {
-    datos
+    datos , username: req.session.username
   });
 });
 

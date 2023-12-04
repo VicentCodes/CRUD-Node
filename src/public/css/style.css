@@ -3,7 +3,17 @@
 }
 
 .separatorTitle {
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.numberData {
+  font-weight: bold;
+}
+
+.title{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .buttonAdd {
@@ -17,6 +27,11 @@
   margin-bottom: 5px;
 }
 
+.btnDelete{
+  background-color: red;
+  border-color: red;
+}
+
 .marginLow {
   margin-bottom: 20px;
 }
@@ -24,5 +39,10 @@
 .logoutb {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.formUpdateModal{
+  margin-bottom: 5px;
+  text-align: left;
 }
 
