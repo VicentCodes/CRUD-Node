@@ -27,7 +27,7 @@
     "url": "git+https://github.com/VicentCode/ProgramacionAMB"
   },
   "engines": {
-    "node": "20.x"
+    "node": ">=14.20.1"
   },
   "keywords": [],
   "author": "",
